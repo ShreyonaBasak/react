@@ -6,8 +6,8 @@ import ReadOnlyRow from "./components/ReadOnlyRow";
 import EditableRow from "./components/EditableRow";
 
 const App = () => {
-  const [contacts, setContacts] = useState(data);
-  const [addFormData, setAddFormData] = useState({
+  const [contacts, setContacts,reset] = useState(data);
+  const [addFormData, setAddFormData,] = useState({
     fullName: "",
     address: "",
     age: "",
@@ -214,6 +214,9 @@ const App = () => {
           placeholder="Give your feedback..."
           onChange={handleAddFormChange}
         />
+        <button type="reset" onClick={() =>{
+          reset ();
+        }}>Reset</button>
         <button type="submit">Add</button>
       </form>
     </div>
