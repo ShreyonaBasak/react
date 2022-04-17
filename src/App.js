@@ -217,7 +217,7 @@ const App = () => {
         <button type="reset" onClick={() =>{
           reset ();
         }}>Reset</button>
-        <button type="submit">Add</button>
+        <button type="submit">Submit</button>
       </form>
     </div>
   );
